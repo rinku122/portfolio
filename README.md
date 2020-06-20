@@ -2,8 +2,6 @@
 
 ## A simple portfolio template for Developers
 
-
-
 **_IMPORTANT NOTE_**: This is only made with HTML ,CSS and some javascript libraries for animations. Without using react or gatsby like stuff. This is done to make it simple , so you only have to clone or download it before use. No need for a node package manager or any other complicated stuff . Just clone it and use it..
 
 <h2 align="center">
@@ -13,14 +11,14 @@
 
 ## Features
 
-⚡️ With only HTML , CSS and Javascript
+⚡️ With only HTML , CSS and Javascript\
 ⚡️ One Page Layout\
 ⚡️ Fully Responsive\
-⚡️ Modern UI + Reveal animations on scroll
-⚡️ Well organized documentation
+⚡️ Modern UI + Reveal animations on scroll\
+⚡️ Well organized documentation\
 
-To view a demo example, **[click here](https://sleepy-chandrasekhar-4761ea.netlify.app/)**\
-To view a live example, **[click here](https://dazzling-leakey-94ae39.netlify.app/)**
+To view a live example, **[click here](https://dazzling-leakey-94ae39.netlify.app/)**\
+To view a demo example, **[click here](https://sleepy-chandrasekhar-4761ea.netlify.app/)**
 
 ---
 
@@ -57,13 +55,11 @@ rm -rf .git
 
 ## Instructions:
 
-### Step 1 - STRUCTURE
-
 Go to `index.html` and fill your information, they are 6 sections:
 
 ### 1 Navbar Section
 
-- In two places given below put your own resume link,or just fill your information in the given link... -->
+- In two places given below put your own resume link,or just fill your information in the given link...
 
 Inside class `sidenav`
 
@@ -124,7 +120,7 @@ Inside class `right`
 </h1>
 ```
 
-- On class `button info-btn my-1` which is a tag, put your own email id
+- On class `button info-btn my-1` which is `<a>` tag, put your own email id
 
 ```html
 <!-- Inside href attribute your own email -->
@@ -142,8 +138,12 @@ Inside class `right`
 Inside class `data-side`,there are some `<a>` tags.In these anchor tags, replace #! with your own social media links.You can also delete the whole section if you want..Get icons [here](https://fontawesome.com/)
 
 ```html
-<!-- Give links to your own social media links -->
-<a href="#!"><i class="fab fa-facebook medium"></i></a>
+<ul>
+  <li class="data-side" data-aos="fade-left" data-aos-delay="1400">
+    <!-- #! Replace your facebook profile  link here-->
+    <a href="#!"><i class="fab fa-facebook medium"></i></a>
+  </li>
+</ul>
 ```
 
 ### 4 About
@@ -154,7 +154,7 @@ On `<img>` ,give your image.You can make the image circular by giving a class of
 <img src="ai.jpg" class="" alt="" />
 ```
 
-On class `small grey text-left` which is the first p tag ,replace the dummy text with your message ,that you want to convey to your recruiter..
+On class `small grey text-left` which is the first `<p>` in section `about` tag ,replace the dummy text with your message ,that you want to convey to your recruiter..
 
 ```html
 <p class="small grey text-left">
@@ -166,11 +166,13 @@ On class `small grey text-left` which is the first p tag ,replace the dummy text
 </p>
 ```
 
-Inside class `proficient grid-4-about` there are some i tags..Replace those i tags with the tehnologies you have learned..You can get those icons from font awesome.You can also use logo ,you can get those from `icons8.com`. You can put as much as i tags you want..It will automatically resize.Just wrap those i tags with li tags..Your wish if you want to give icons ,or you just want to name the technologies.If you donot want icons just delete those i tags.
+Inside class `proficient grid-4-about` there are some `<img>` tags..Replace those `<img>` tags with the tehnologies you have learned..You can get those images from [here](https://icons8.com/).You can also use icons ,you can get those from font awesome [here](https://fontawesome.com/). You can put as much as `<i>` or `<img>` you want..It will automatically resize.Just copy the `<li>` and paste as much time you need.Inside those `<li>`, put the icon/image of technology you have learnt . If you also want to give names of technologies with icons/images , give them inside `<p>`.If you donot want ,thats okay just delete that `<p>` tag after `<img>` tag.
 
 ```html
 <li>
-  <i class="fab grey x-large fa-html5"></i>
+  <!-- Give  logos or icons of technoloies you know.. -->
+  <img src="html.png" alt="" />
+  <!-- Technology name here if you want to specify -->
   <p>HTML</p>
 </li>
 ```
@@ -188,7 +190,7 @@ If you donot want to classify on basis of familiar or proficient just remove tho
 You can expect this class `grid-2-work my-1` as a single project...
 If you have more then 3 projects,you just have to copy this whole class and paste it.If you are having 5 projects you should have 5 containers of class `grid-2-work my-1`.You can add as much as projects you want..
 
-The p tags before class `grid-2-work my-1` are project names.Give your own project name here.
+The `<p>` tags before class `grid-2-work my-1` are project names.Give your own project name here.
 
 ```html
 <p data-aos="fade-right" data-aos-offset="300" class="medium fw-600 text-left">
@@ -197,9 +199,9 @@ The p tags before class `grid-2-work my-1` are project names.Give your own proje
 </p>
 ```
 
-In p tags inside `grid-2-work my-1` give your own content..Like replace project description with your own project description..Inside span give the technologies you have used to make that particular project..You can add more spans if you have used more technologies..
-Inside class `links` in first `<a>` tag give your own github repo for that project..And in second `<a>` give a link to your deployed project.
-In `<i>` tag give image of your project...
+In `<p>` tags inside `grid-2-work my-1` give your own content..Like replace project description with your own project description..Inside span give the technologies you have used to make that particular project..You can add more spans if you have used more technologies..
+Inside class `links` in first `<a>` tag give your own github repo for that project..And in second `<a>` give a link to your deployed project. Also give  
+In `<img>` tag give image of your project...`<img>` is inside an `<a>` tag, give a link to that `<a>` which goes to your live project....
 
 ```html
 <div data-aos="fade-right" data-aos-offset="300" class="grid-2-work my-1">
@@ -271,6 +273,7 @@ In `<i>` tag give image of your project...
     </div>
   </div>
   <div data-tilt data-tilt-max="5" class="project-img">
+    <!-- Give link to your live project in href attribute -->
     <a href="#!">
       <!-- Give image of your project -->
       <img src="pro1.jpg" alt=""
@@ -281,7 +284,7 @@ In `<i>` tag give image of your project...
 
 ### 6 Contact
 
-Inside class `contact text-center` there are 3 `<p>` tags.In second `<p>` give your loction.In third `<p>` tag say something to recruiter to hire you or to get in contact with you..After that in `<a>` give your own email id
+Inside class `contact text-center` there are 3 `<p>` tags.In second `<p>` give your location.In third `<p>` tag say something to recruiter to hire you or to get in contact with you..After that in `<a>` give your own email id
 
 ```html
 <div
@@ -309,7 +312,7 @@ Inside class `contact text-center` there are 3 `<p>` tags.In second `<p>` give y
 </div>
 ```
 
-In class `social-icons my-1`..There are some `<a>` tags wrapperd insdide `<li>`.Just give your own social media links inside href attribute of `<a>`..You can add more just copy on `<li>` tag and paste that..Search for that icon ,copy the `<i>` and paste inside the `<a>`..
+In class `social-icons my-1`..There are some `<a>` tags wrapped insde `<li>`.Just give your own social media links inside href attribute of `<a>`..You can add more just copy on `<li>` tag and paste that..Search for that icon from font awesome ,copy the `<i>` and paste inside the `<a>`..
 see [Font Awesome Icons](https://fontawesome.com/)
 
 ```html
@@ -330,10 +333,12 @@ see [Font Awesome Icons](https://fontawesome.com/)
 
 Now its the time to deploy your portfolio
 
-I recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY..
 First make a repository of your project on github..
 
-Just go there create your account.
+I recommend to use [Netlify](https://netlify.com) to achieve this on the EASIEST WAY..
+
+Just go there create your account. \
+
 1.On your dashboard ,ypu will see `NEW SITE FROM GIT` ,click on that..
 
 2.It will ask you for your github email and password...
@@ -346,12 +351,10 @@ Just go there create your account.
 
 ## Authors
 
-- **Rejesh Kumar** - [https://github.com/devrinku](https://github.com/devrinku)
+- **Rajesh Kumar** - [https://github.com/devrinku](https://github.com/devrinku)
 
 ## Acknowledgments 🎁
 
-This was my first project after HTML CSS..I wanted to share ,as it can be usefull for another devloper....If you like this project please drop a star..
+This was my first project after HTML CSS and Javascript..I wanted to share ,as it can be usefull for another devloper....If you like this project please drop a star..
 
-
-### **_IMPORTANT NOTE_** : If you are facing any issue  in using this...Just clone or download...Open the file..I have tried my best to explain things with the help of html comments there...I  hope you will not face any issue there..
-
+### **_IMPORTANT NOTE_** : If you are facing any issue in using this...Just clone or download...Open the file..I have tried my best to explain things with the help of html comments there...I hope you will not face any issue there..
