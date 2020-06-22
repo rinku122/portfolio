@@ -353,6 +353,10 @@ Just go there create your account. \
 
 - **Rajesh Kumar** - [https://github.com/devrinku](https://github.com/devrinku)
 
+## License 📄
+
+This project is licensed under the [MIT License](LICENSE)
+
 ## Acknowledgments 🎁
 
 This was my first project after HTML CSS and Javascript..I wanted to share ,as it can be usefull for another devloper....If you like this project please drop a star..
