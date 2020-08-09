@@ -151,12 +151,12 @@ Inside class `data-side`,there are some `<a>` tags.In these anchor tags, replace
 On `<img>` ,give your image.You can make the image circular by giving a class of `round-img`.Below in the a tag you can give a link to your github account.
 
 ```html
-   <!-- Provide  link to your github profile inside href attribute -->
-            <a href="#!">
-              <div class="imgoverlay"></div>
-              <!-- Your Image Here -->
-              <img src="ai.jpg" class="" alt=""
-            /></a>
+<!-- Provide  link to your github profile inside href attribute -->
+<a href="#!">
+  <div class="imgoverlay"></div>
+  <!-- Your Image Here -->
+  <img src="ai.jpg" class="" alt=""
+/></a>
 ```
 
 On class `small grey text-left` which is the first `<p>` in section `about` tag ,replace the dummy text with your message ,that you want to convey to your recruiter..
@@ -171,32 +171,32 @@ On class `small grey text-left` which is the first `<p>` in section `about` tag 
 </p>
 ```
 
-Inside class `.skills`.There are some `<li>` tag ,give the name of technologies you have learned
+Inside class `skills` there are some `<li>` tags,,give the name of technologies you have learned
 
 ```html
-  <div class="skills">
-              <ul>
-                <p class="small grey text-left my-1">
-                  Languages & <br />
-                  Frameworks:
-                </p>
-                <!-- Give the name of language/framework you have learned.You can add as much as names you want just wrap that whole inside the li tag,and give the icon -->
-                <li><i class="fas fa-angle-right"></i>Tech 1</li>
-                <li><i class="fas fa-angle-right"></i>Tech 2</li>
-                <li><i class="fas fa-angle-right"></i>Tech 3</li>
-              </ul>
-              <ul>
-                <p class="small grey my-1 text-left">
-                  Tools & <br />
-                  Platforms:
-                </p>
-                <!-- Give the name of language/framework you have learned  -->
-                <li><i class="fas fa-angle-right"></i>Tool 1</li>
-                <li><i class="fas fa-angle-right"></i>Tool 2</li>
-                <li><i class="fas fa-angle-right"></i>Tool 3</li>
-              </ul>
-            </div>
-
+<div class="skills">
+  <ul>
+    <p class="small grey text-left my-1">
+      Languages & <br />
+      Frameworks:
+    </p>
+    <!-- Give the name of language/framework you have learned.You can add as much as names you want just wrap that whole inside the li tag,and give the icon -->
+    <li><i class="fas fa-angle-right"></i>Tech 1</li>
+    <li><i class="fas fa-angle-right"></i>Tech 2</li>
+    <li><i class="fas fa-angle-right"></i>Tech 3</li>
+  </ul>
+  <ul>
+    <p class="small grey my-1 text-left">
+      Tools & <br />
+      Platforms:
+    </p>
+    <!-- Give the name of language/framework you have learned  -->
+    <li><i class="fas fa-angle-right"></i>Tool 1</li>
+    <li><i class="fas fa-angle-right"></i>Tool 2</li>
+    <li><i class="fas fa-angle-right"></i>Tool 3</li>
+  </ul>
+</div>
+```
 
 ### 5 Work
 
@@ -278,13 +278,13 @@ In `<img>` tag give image of your project...`<img>` is inside an `<a>` tag, give
         </span>
       </li>
     </ul>
-  <div class="links">
-              <!-- Give a linkt to your project repository -->
-              <a target="_blank" class="button btn" href="#!"> Code</a>
-              <!-- Givethe link tp your live project -->
-              <a target="_blank" class="button btn" href="#!"> Demo</a>
-            </div>
-
+    <div class="links">
+      <!-- Give a link to your project repository -->
+      <a target="_blank" class="button btn" href="#!"> Code</a>
+      <!-- Givethe link tp your live project -->
+      <a target="_blank" class="button btn" href="#!"> Demo</a>
+    </div>
+  </div>
   <div data-tilt data-tilt-max="5" class="project-img">
     <!-- Give link to your live project in href attribute -->
     <a href="#!">
@@ -375,3 +375,4 @@ This project is licensed under the [MIT License](LICENSE)
 This was my first project after HTML CSS and Javascript..I wanted to share ,as it can be usefull for another devloper....If you like this project please drop a star..
 
 ### **_IMPORTANT NOTE_** : If you are facing any issue in using this...Just clone or download...Open the file..I have tried my best to explain things with the help of html comments there...I hope you will not face any issue there..
+
