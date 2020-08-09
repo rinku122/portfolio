@@ -380,11 +380,12 @@ aside li {
   height: 100%;
 }
 
-.grid-4-about {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  align-items: center;
+.skills {
+  display: flex;
+  justify-content: space-between;
+}
+.skills ul:last-child {
+  margin-left: 0.8rem;
 }
 
 .grid-2-about {
@@ -394,6 +395,10 @@ aside li {
 }
 
 /* --------------------Work-------------------------- */
+.btn {
+  display: block;
+  padding: 0.3rem 0.8rem;
+}
 .grid-2-work {
   display: grid;
   grid-template-columns: 1fr 2fr;
