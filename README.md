@@ -318,7 +318,7 @@ Inside class `contact text-center` there are 3 `<p>` tags.In second `<p>` give y
     pariatur.
   </p>
   <!-- Give Your own email id -->
-  <a class="button my-2" href="mailto:abc@gmail.com">Get In Touch</a>
+  <a class="button my-2" href="mailto:ab@gmail.com">Get In Touch</a>
   <div>
     <a class="last mx" href="#top"> <i class="fas large fa-chevron-up"></i></a>
   </div>
@@ -375,4 +375,3 @@ This project is licensed under the [MIT License](LICENSE)
 This was my first project after HTML CSS and Javascript..I wanted to share ,as it can be usefull for another devloper....If you like this project please drop a star..
 
 ### **_IMPORTANT NOTE_** : If you are facing any issue in using this...Just clone or download...Open the file..I have tried my best to explain things with the help of html comments there...I hope you will not face any issue there..
-
