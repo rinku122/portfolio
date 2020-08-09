@@ -148,10 +148,15 @@ Inside class `data-side`,there are some `<a>` tags.In these anchor tags, replace
 
 ### 4 About
 
-On `<img>` ,give your image.You can make the image circular by giving a class of `round-img`
+On `<img>` ,give your image.You can make the image circular by giving a class of `round-img`.Below in the a tag you can give a link to your github account.
 
 ```html
-<img src="ai.jpg" class="" alt="" />
+   <!-- Provide  link to your github profile inside href attribute -->
+            <a href="#!">
+              <div class="imgoverlay"></div>
+              <!-- Your Image Here -->
+              <img src="ai.jpg" class="" alt=""
+            /></a>
 ```
 
 On class `small grey text-left` which is the first `<p>` in section `about` tag ,replace the dummy text with your message ,that you want to convey to your recruiter..
@@ -166,24 +171,32 @@ On class `small grey text-left` which is the first `<p>` in section `about` tag 
 </p>
 ```
 
-Inside class `proficient grid-4-about` there are some `<img>` tags..Replace those `<img>` tags with the tehnologies you have learned..You can get those images from [here](https://icons8.com/).You can also use icons ,you can get those from font awesome [here](https://fontawesome.com/). You can put as much as `<i>` or `<img>` you want..It will automatically resize.Just copy the `<li>` and paste as much time you need.Inside those `<li>`, put the icon/image of technology you have learnt . If you also want to give names of technologies with icons/images , give them inside `<p>`.If you donot want ,thats okay just delete that `<p>` tag after `<img>` tag.
+Inside class `.skills`.There are some `<li>` tag ,give the name of technologies you have learned
 
 ```html
-<li>
-  <!-- Give  logos or icons of technoloies you know.. -->
-  <img src="html.png" alt="" />
-  <!-- Technology name here if you want to specify -->
-  <p>HTML</p>
-</li>
-```
+  <div class="skills">
+              <ul>
+                <p class="small grey text-left my-1">
+                  Languages & <br />
+                  Frameworks:
+                </p>
+                <!-- Give the name of language/framework you have learned.You can add as much as names you want just wrap that whole inside the li tag,and give the icon -->
+                <li><i class="fas fa-angle-right"></i>Tech 1</li>
+                <li><i class="fas fa-angle-right"></i>Tech 2</li>
+                <li><i class="fas fa-angle-right"></i>Tech 3</li>
+              </ul>
+              <ul>
+                <p class="small grey my-1 text-left">
+                  Tools & <br />
+                  Platforms:
+                </p>
+                <!-- Give the name of language/framework you have learned  -->
+                <li><i class="fas fa-angle-right"></i>Tool 1</li>
+                <li><i class="fas fa-angle-right"></i>Tool 2</li>
+                <li><i class="fas fa-angle-right"></i>Tool 3</li>
+              </ul>
+            </div>
 
-If you donot want to classify on basis of familiar or proficient just remove those p tags...
-
-```html
-<p class="small grey text-left my">
-  Familiar :
-</p>
-```
 
 ### 5 Work
 
@@ -265,13 +278,13 @@ In `<img>` tag give image of your project...`<img>` is inside an `<a>` tag, give
         </span>
       </li>
     </ul>
-    <div class="links">
-      <!-- In href give your github repository link -->
-      <a class="large" href="#!"> <i class="fab fa-github"></i></a>
-      <!-- Give link to your live project -->
-      <a class="medium" href="#!"> <i class="fas fa-external-link-alt"></i></a>
-    </div>
-  </div>
+  <div class="links">
+              <!-- Give a linkt to your project repository -->
+              <a target="_blank" class="button btn" href="#!"> Code</a>
+              <!-- Givethe link tp your live project -->
+              <a target="_blank" class="button btn" href="#!"> Demo</a>
+            </div>
+
   <div data-tilt data-tilt-max="5" class="project-img">
     <!-- Give link to your live project in href attribute -->
     <a href="#!">
